@@ -1,15 +1,12 @@
 <?php
 
-$EURO = 1000; //importo
+
 const BUDGET = 1000;
-$EURO = readline('QuantO e l importo?');
-if ($EURO > MAX) { 
-    echo 'Superiore a 1000 euro';           
-} elseif ($EURO < MAX) {
-echo 'Inferiore';
+$EURO = readline('Quanto e l importo?');
+if ($EURO > BUDGET) {
+    echo 'Superiore a 1000 euro';
+} else {
+
+    $valore_calcolato = $EURO / 3;
+    echo "Paga in 3 comode rate da: $valore_calcolato Euro";
 }
-
-
-    else {
-        echo 'Il tuo importo e superiore';
-    }
